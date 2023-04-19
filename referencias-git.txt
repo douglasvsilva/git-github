@@ -76,6 +76,3 @@ git clone - permite clonar(baixar) qualquer repositorio publico remoto e também
 git diff - salva alterações sem precisar de commit, serve para quando se está trabalhando
 em uma branch e precisa mudar para putra branch, então com o diff essas alterações são arquivadas e 
 quando voltar para essa primeira branch use o git diff e continue a usar as alterações arquivadas
-
-
-alterando doug-main, mas é só isso mesmo
