@@ -3,11 +3,18 @@
 
 COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2
   https://www.youtube.com/watch?v=UBAX-13g8OM&t=1205s
+  https://github.com/rafaballerini/GitTutorial
 
 
 Comandos Git mais utilizados e como configurar
   https://blog.geekhunter.com.br/comandos-git-mais-utilizados/
 
+Visual Studio Code como editor de texto padrão do Git
+  https://blog.geekhunter.com.br/visual-studio-code-como-editor-do-git/
+
+
+
+https://blog.betrybe.com/git/git-add/
 
 =============================================================================================
 
@@ -34,6 +41,10 @@ git commit - com o commit os arquivos são salvos e podem se3r enviados para o r
       git commit -m "mensagem do commit"
 
 git status - exibe informações dos arquivos que foram alterados e os que precisam de commit
+
+git diff - exibe informações mais detalhadas, exibindo o que realmente foi alterado com as 
+           linhas que foram adicionas e removidas 
+           a como estavam antes
 
 git push - depois do commit, o push envia os arquivos para o repositorio remoto
     ex:
@@ -62,7 +73,9 @@ git merge - faz a união de uma ou mais branchs com a branch main
 
 git revert - desfaz alterações em repositorios locais e remotos
     ex:
-       git revert <numero de rash> - para ver o rash use o git log, então escolhendo um rash com o git revert vai volta para aquele estado referente a rash
+       git revert <numero de rash> - para ver o rash use o git log, então escolhendo um rash com o 
+                                      git revert vai volta para aquele estado referente a rash
+      
 
 
 git clone - permite clonar(baixar) qualquer repositorio publico remoto e também receber as
@@ -73,6 +86,9 @@ git clone - permite clonar(baixar) qualquer repositorio publico remoto e também
                   repositorio remoto
        git remote rm origin - para desvincular o clone e não receber mais atualizações.
 
-git diff - salva alterações sem precisar de commit, serve para quando se está trabalhando
-em uma branch e precisa mudar para putra branch, então com o diff essas alterações são arquivadas e 
-quando voltar para essa primeira branch use o git diff e continue a usar as alterações arquivadas
+git stash - salva alterações sem precisar de commit, 
+Obs:
+    Serve para quando se está trabalhando em uma branch1 e precisa-se mudar para outra branch2, então para não perder as modificações na branch1 use git stash e essas alterações são arquivadas e quando precisar voltar para a branch1 poderá usar as alterações arquivadas.
+    Ex:
+       git stash --list - para listar as stashs que foram guardadas
+       it git aplly stash@{2} - para aplicar stashs antigos
