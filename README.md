@@ -1,2 +1,68 @@
 # git-github
-Estudos dos comando git
+Estudos git
+
+- Exemplos de comandos mais usados - 
+
+git init - inicia um novo repositorio local
+
+git add  - adiciona os novos arquivos criados ou alterados
+  ex:
+     git add ex1 ex2 ex3 - adiciona somente os arquivos 1 , 2  e 3
+     git add . ou git add -A - adiciona todos os arquivos dentro de uma pasta
+
+git commit - com o commit os arquivos são salvos e podem se3r enviados para o repositorio remoto
+   ex:
+      git commit -m "mensagem do commit"
+
+git status - exibe informações dos arquivos que foram alterados e os que precisam de commit
+
+git diff - exibe informações mais detalhadas, exibindo o que realmente foi alterado com as 
+           linhas que foram adicionas e removidas 
+           a como estavam antes
+
+git push - depois do commit, o push envia os arquivos para o repositorio remoto
+    ex:
+       git push origin main - envia para a branch main(nome do repositorio remoto), origim é o 
+                              repositorio local, pode ser qualquer nome.
+       git push -u origin <nome-do-branch> - para uma branch criada recentemente, normalmente se faz
+                                             uma unica vez.
+
+git pull - atualiza um repositorio local com os novos arquivos de um repositorio remoto
+
+ 
+git branch - 
+    ex: 
+      git branch <nome-da-nova-branch> - cria uma nova branch local
+      git branch --list - exibe as ramificações existentes em um repositorio, sendo a principal main
+      git branch -d <nome-da branch> - deleta uma branch existente
+
+git checkout - permite criar e mudar de uma branch para outra
+    ex:
+       git checkout <nome-da-branch> - acessa uma branch diferente existente
+       git checkout -b <nome-da-branch> - cria e acessa uma branch tudo de uma vez
+
+git merge - faz a união de uma ou mais branchs com a branch main
+    ex:
+       git merge <nome-da-branch-que-não-é-a-main>
+
+git revert - desfaz alterações em repositorios locais e remotos
+    ex:
+       git revert <numero de rash> - para ver o rash use o git log, então escolhendo um rash com o 
+                                      git revert vai volta para aquele estado referente a rash
+      
+
+
+git clone - permite clonar(baixar) qualquer repositorio publico remoto e também receber as
+            atualizações
+    ex:
+       git clone http://github.com/vaamone/dell-linuxmint - faz o clone do repositorio
+       git pull - usando git pull neste clone, vai receber as atualizações feitas pelo dono do
+                  repositorio remoto
+       git remote rm origin - para desvincular o clone e não receber mais atualizações.
+
+git stash - salva alterações sem precisar de commit, 
+Obs:
+    Serve para quando se está trabalhando em uma branch1 e precisa-se mudar para outra branch2, então para não perder as modificações na branch1 use git stash e essas alterações são arquivadas e quando precisar voltar para a branch1 poderá usar as alterações arquivadas.
+    Ex:
+       git stash --list - para listar as stashs que foram guardadas
+       it git aplly stash@{2} - para aplicar stashs antigos
