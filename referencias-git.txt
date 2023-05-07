@@ -12,6 +12,8 @@ Comandos Git mais utilizados e como configurar
 Visual Studio Code como editor de texto padrão do Git
   https://blog.geekhunter.com.br/visual-studio-code-como-editor-do-git/
 
+Configurando a chave SSH e git push - Git e GitHub #02
+  https://www.youtube.com/watch?v=en1dycYtL48
 
 
 https://blog.betrybe.com/git/git-add/
