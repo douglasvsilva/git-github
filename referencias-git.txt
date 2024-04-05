@@ -94,3 +94,7 @@ Obs:
     Ex:
        git stash --list - para listar as stashs que foram guardadas
        it git aplly stash@{2} - para aplicar stashs antigos
+
+git remote -v - lista as conexões remotas existentes
+
+
